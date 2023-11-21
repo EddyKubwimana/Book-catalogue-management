@@ -92,6 +92,7 @@ public class Book{
 
 
    System.out.println(Book.numberBook);
+   System.out.println(a);
 
 
     }
