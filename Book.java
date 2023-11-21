@@ -14,7 +14,7 @@ public class Book{
     private String authorFirstName;
     private String authorLastName;
     private String ISBN;
-    private int numberBook = 0;
+    static int numberBook = 0;
     private String bookTitle;
     private String bookSummary;
     
@@ -25,7 +25,7 @@ public class Book{
         this.authorLastName = autLast;
         this.ISBN = ISBN;
         this.bookTitle = title;
-        this.numberBook+=1;
+        Book.numberBook+=1;
         this.bookSummary = summary;
     }
 
@@ -45,7 +45,7 @@ public class Book{
    String a= new Book("Eddy","Kubwimana","84092025","Capitalism"," jdjdjdjdj").authorFirstName;
 
 
-   System.out.println(a);
+   System.out.println(Book.numberBook);
 
 
    
